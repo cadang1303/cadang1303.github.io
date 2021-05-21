@@ -1,0 +1,181 @@
+*{
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Slab', sans-serif;
+    color: black;
+    font-size: 16px;
+}
+
+/* Wide-screen pc*/
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    position: -webkit-sticky;
+    position: sticky;
+    overflow: hidden;
+}
+
+.brand {
+    display: block;
+    font-size: 20px;
+    font-weight: bold;
+    float: left;
+    text-align: center;
+    padding: 18px 20px;
+}
+
+li {
+    float: right;
+}
+
+li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 20px 20px;
+    text-decoration: none;
+}
+  
+li a:hover {
+    color: rgb(40, 13, 134);
+    font-weight: bold;
+    border-bottom: solid 2px black;
+}
+
+.mobileMenu {
+    display: none;
+}
+
+.about{
+    background-color: black;
+    color: white;
+    padding: 10px;
+}
+
+.about h1{
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.about-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.avatar img{
+    border-radius: 50%;
+    border: solid 2px rgb(190, 190, 190);
+    width: 200px;
+}
+
+.about-cont {
+    display: inline-block;
+    padding: 10px;
+    margin: 30px;
+    max-width: 900px;
+    text-align: justify;
+}
+
+.work {
+    padding: 10px;
+    margin: auto;
+}
+
+.work h1{
+    text-transform: uppercase;
+    text-align: center;
+    
+}
+
+.photograph {
+    display: inline-block;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+}
+
+.photograph h1{
+    text-transform: uppercase;
+}
+
+.img-grid {
+    display: block;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.row {
+    display: block;
+    margin: 8px -16px;
+}
+
+.row, .row > .column {
+    padding: 8px;
+}
+
+.column {
+    display: block;
+    float: left;
+    width: 33%;
+}
+
+.column img {
+    max-width: 100%;
+}
+
+.contact {
+    padding: 5px;
+    text-align: center;
+}
+
+.contact a{
+    color: black;
+    padding: 5px;
+    font-size: 36px;
+}
+
+.contact a:visited{
+    color: black;
+    padding: 5px;
+    font-size: 36px;
+}
+
+footer {
+    display: block;
+    padding: 5px;
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+@media screen and (min-width: 1600px){
+    .navbar {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+}
+
+/* mobile device */
+@media screen and (max-width: 600px) {
+    .topnav {
+        display: none;
+    }
+    .mobileMenu{
+        display: block;
+    }
+    .column {
+        width: 100%;
+    }
+  }
+  

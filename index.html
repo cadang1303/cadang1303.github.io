@@ -3,25 +3,99 @@
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Nguyen Hai Dang's CV</title>
+    <title>Hai Dang Nguyen</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='assets/css/style.css'>
-
-	<link rel="stylesheet" href="assets/vendors/font-awesome-v5.1.3/css/font-awesome.min.css">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,700" rel="stylesheet">
     
-    <!-- <script src='assets/js/main.js'></script> -->
+    <script src='assets/js/main.js'></script>
 </head>
 <body>
-    <div class="wrapper flex">
-        <div class="sidebar">
-
-        </div>
-
+    <div class="wrapper">
+        <!-- Header -->
+        <header>
+            <div class="navbar">
+                <div class="brand">Hai Dang Nguyen</div>
+                <div class="mobileMenu">
+                    
+                    <a href="javascript:void(0);" class="icon" onclick="dropdownMenu()">
+                        <i class="fa fa-bars"></i>
+                    </a>
+                </div>
+                <div class="menu">
+                    <ul class="topNav" id="topNav">
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#photograph">Photograph</a></li>
+                        <li><a href="#work">Work</a></li>
+                        <li><a href="#about">About</a></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <!-- Body -->
         <div class="content">
-            
+            <!-- About -->
+            <div class="about" id="about">
+                <h1>About Me</h1>
+                <div class="about-wrap">
+                    <div class="avatar">
+                        <img src="assets/img/avatar.jpg" loading="lazy" alt="avatar"/>
+                    </div>
+                    <div class="about-cont">
+                        <p>Hi, I'm Nguyen Hai Dang, a student (undergraduate) from Faculty of Information and Technology (FIT) in Hanoi University (HANU) since September 2017.
+                        <br/><br/>Interested in technologies, especially in Web Development. Gained basic English skills and basic programming skills of <strong><em>Java, HTML/CSS, JavaScript, NodeJS, ReactJS and MySQL Database</em></strong> by practicing with mini projects. In my group projects about Web Development, I mainly took responsibility as a Front-end Developer, UI/UX Designer.
+                        <br/><br/>Hope to have a chance to apply what I have learned at university to express myself while willing to learn more and gain experience in a professional working environment.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="work" id="work">
+                <h1>Work Experience</h1>
+                    
+            </div>
+
+            <div class="photograph" id="photograph">
+                <h1>Photograph</h1>
+                <p>Not just about Technologies, I also shares interest in arts, loves taking photos to capture the moment.<br/></p>
+                <div class="img-grid">
+                    <div class="row">
+                        <div class="column">
+                            <img src="assets/img/img1.JPG" loading="lazy" alt="img"/>
+                        </div>
+                        <div class="column">
+                            <img src="assets/img/img2.JPG" loading="lazy" alt="img"/>
+                        </div>
+                        <div class="column">
+                            <img src="assets/img/img3.JPG" loading="lazy" alt="img"/>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="column">
+                            <img src="assets/img/img4.JPG" loading="lazy" alt="img"/>
+                        </div>
+                        <div class="column">
+                            <img src="assets/img/img7.JPG" loading="lazy" alt="img" />
+                        </div>
+                        <div class="column">
+                            <img src="assets/img/img6.JPG" loading="lazy" alt="img"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="contact" id="contact">
+                <h1>Contact Me</h1>
+                <p><a href="https://facebook.com/cadang1303"><i class="fa fa-facebook-official"></i></a>
+                    <a href="https://instagram.com/cadangahihi"><i class="fa fa-instagram"></i></a>
+                    <a href="https://twitter.com/cadang1303"><i class="fa fa-twitter-square"></i></a>
+                    <a href="mailto:dangnguyen130399@gmail.com"><i class="fa fa-envelope-square"></i></a>
+                </p>
+                </div>
         </div>
+        <!-- Footer -->
+        <footer>
+            <p>Copyright© 2021.</p>
+        </footer>
     </div>
 </body>
 </html>
