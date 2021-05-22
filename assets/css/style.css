@@ -247,16 +247,15 @@ li a:hover {
 
 .tooltip {
     visibility: hidden;
-    width: 180px;
     background-color: black;
     color: #fff;
     text-align: center;
     border-radius: 6px;
-    padding: 5px 0;
+    padding: 5px;
     position: absolute;
     z-index: 1;
     top: -5px;
-    left: 105%;
+    right: 90%;
     font-size: 12px;
 }
 
@@ -299,10 +298,6 @@ footer {
     color: white;
 }
 
-.hide {
-    display: none;
-}
-
 @media screen and (min-width: 1600px){
     .navbar {
         padding-left: 5%;
@@ -311,29 +306,30 @@ footer {
     }
 }
 
-@media (min-width: 500px){
-    #button {
-        margin: 30px;
-    }
-}
-
-
 /* mobile device */
 @media screen and (max-width: 600px) {
-    .topnav {
+    .topNav {
         display: none;
     }
-    .mobileMenu{
-        display: block;
+
+    .navbar {
+        display: flex;
+        justify-content: center;
     }
+
+    .brand {
+        font-size: 24px;
+        padding: 12px;
+    }
+
     .column {
+        flex: 100%;
         max-width: 100%;
     }
 
     .timeline::after {
         left: 31px;
     }
-
 
     .container {
         width: 100%;
