@@ -202,29 +202,22 @@ li a:hover {
     text-transform: uppercase;
 }
 
-.img-grid {
-    display: block;
-    max-width: 1200px;
-    margin: auto;
-}
-
 .row {
-    display: block;
-    margin: 8px -16px;
-}
-
-.row, .row > .column {
-    padding: 8px;
-}
-
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+  }
+  
 .column {
-    display: block;
-    float: left;
-    width: 33%;
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
 }
-
+  
 .column img {
-    max-width: 100%;
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
 }
 
 /* Contact */
